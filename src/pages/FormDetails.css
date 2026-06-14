@@ -1,0 +1,128 @@
+.details-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 16px;
+}
+
+.details-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.details-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4);
+}
+
+.details-header h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 6px;
+}
+
+.details-header p {
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 28px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 18px;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 16px;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item:nth-child(even) {
+  background: #f7fafc;
+}
+
+.detail-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  font-size: 0.95rem;
+  color: #1a202c;
+  font-weight: 500;
+  text-align: right;
+  word-break: break-all;
+}
+
+.back-btn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.back-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    padding: 24px 16px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .detail-value {
+    text-align: left;
+  }
+}
